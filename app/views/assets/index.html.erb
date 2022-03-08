@@ -1,0 +1,15 @@
+ <div class="cards">
+  <% @assets.each do |asset| %>
+     <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= asset.name %></h2>
+          <p><%= asset.description %></p>
+        </div>
+        <h2 class=<%= asset.price %></h2>
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+      </div>
+    </div>
+  <% end  %>
+</div>
