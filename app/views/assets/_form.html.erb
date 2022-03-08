@@ -1,0 +1,9 @@
+   <%= simple_form_for [@asset] do |asset| %>
+      <%# <%= boat.input :photo, as: :file %> %>
+      <%= asset.input :name, input_html: { class: "me-2 drop-shadow" }, wrapper_html: { class: "no-mb" } %>
+      <%= asset.input :game, input_html: { class: "me-2 drop-shadow" }, wrapper_html: { class: "no-mb" } %>
+      <%= asset.input :description, input_html: { class: "me-2 drop-shadow" }, wrapper_html: { class: "no-mb" } %>
+      <%= asset.input :price, input_html: { class: "me-2 drop-shadow" }, wrapper_html: { class: "no-mb" } %>
+      <%= asset.input :rental_length, input_html: { class: "me-2 drop-shadow" }, wrapper_html: { class: "no-mb" } %>
+      <%= asset.submit "Submit", class: "btn btn-dark me-2" %>
+      <%end%>

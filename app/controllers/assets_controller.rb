@@ -5,19 +5,20 @@ class AssetsController < ApplicationController
   end
 
   def show
+    @asset = Asset.find(params[:id])
     # @review = Review.new
-    @booking = Booking.new
+    # @booking = Booking.new
   end
 
   def new
     @asset = Asset.new
-    authorize @asset
-  ends
+    # authorize @asset
+  end
 
   def create
     @asset = Asset.new(asset_params)
     @asset.user = current_user
-    authorize @asset
+    # authorize @asset
     if @asset.save
       redirect_to asset_path(@asset)
     else
@@ -29,33 +30,30 @@ class AssetsController < ApplicationController
   def edit
   end
 
-  def update
-    if @asset.update(asset_params)
-      redirect_to asset_path(@asset)
-    else
-      render :edit
-    end
-  end
+  # def update
+  #   if @asset.update(asset_params)
+  #     redirect_to asset_path(@asset)
+  #   else
+  #     render :edit
+  #   end
+  # end
 
-  def destroy
-    if @asset.destroy
-      redirect_to assets_path(@asset)
-    else
-      render :index
-    end
-  end
+  # def destroy
+  #   if @asset.destroy
+  #     redirect_to assets_path(@asset)
+  #   else
+  #     render :index
+  #   end
+  # end
 
   private
 
   def set_asset
     @asset = Asset.find(params[:id])
-    authorize @asset
+    # authorize @asset
   end
 
   def asset_params
     params[:asset].permit(:user, :name, :game, :description, :price, :rental_length)
   end
-end
-
-
 end

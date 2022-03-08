@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="boat-image-cards d-flex mt-3">
+    <img src="https://www.theluxurybali.com/wp-content/uploads/2015/06/SIL_1f-848x530.jpg" alt="">
+    </div>
+    <div class="product-desription-form d-flex">
+      <div class="product-description">
+        <h1><%= @asset.name %></h1>
+        <h2><em><%= @asset.game%></em></h2>
+        <p><%= @asset.description %></p>
+      </div>
+      <div class="product-form">
+      <p style="color: grey"><%= @asset.price %> IDR /per day</p>
+      <%# <%= simple_form_for([@asset, @booking]) do |f| %>
+        <%# <%= f.input :start_date, html5: true, class: 'form-control' %>
+        <%# <%= f.input :end_date, html5: true, cslass: 'form-control'   %>
+        <%# <%= f.submit class: 'booking-button btn btn-dark' %>
+      <%# <% end %>
+     </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+
+.product-img-main {
+  width: 65vw;
+  background-size: cover;
+}
+
+.product-form {
+  border: solid 1px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 7px;
+  border-color: rgb(204, 204, 204);
+  margin-left: auto;
+  width: 336px
+}
+
+.product-img-other {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin-left: 16px;
+  width: -webkit-fill-available;
+}
+
+.product-card {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.product-desription-form {
+  margin-top: 66px;
+}
+
+h1 {
+  font-family: 'Avenir', Helvetica, sans-serif;
+  font-weight: 350;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Avenir', Helvetica, sans-serif;
+  font-weight: 250;
+  font-size: 22px;
+}
+.product-description {
+  width: 700px;
+  font-size: 16px;
+  font-family: 'Avenir', Helvetica, sans-serif;
+}
+
+.product-map {
+  margin-top: 85px;
+}
+
+.booking-button {
+  margin-top: 39px;
+  color: white;
+  background-color: black;
+  height: 42px;
+  font-family: 'Avenir', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 5px 10px 5px 10px;
+  margin-left: auto;
+  width: 310px
+}
